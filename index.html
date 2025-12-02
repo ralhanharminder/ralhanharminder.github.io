@@ -4,114 +4,223 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harminder Ralhan - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #4a90e2;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #2c3e50;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .contact a {
+      color: #4a90e2;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2c3e50;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      background-color: #e9f2fb;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .skills-grid div {
+      background: #f9fbfd;
+      padding: 10px;
+      border: 1px solid #dfe6e9;
+      border-radius: 4px;
+    }
+
+    h3 {
+      margin-bottom: 5px;
+      color: #34495e;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+      background-color: #dfe6e9;
+      padding: 15px 0;
+    }
+
+    .print-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 12px;
+      background-color: #4a90e2;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .print-link:hover {
+      background-color: #357ABD;
+    }
+
+    /* Print-friendly adjustments */
+    @media print {
+      body {
+        background: #fff;
+      }
+      .container {
+        box-shadow: none;
+      }
+      .print-link {
+        display: none;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 40px; max-width: 900px; line-height: 1.6; color: #333;">
+<body>
 
-  <header style="text-align: center; margin-bottom: 30px;">
-    <h1>Harminder Ralhan</h1>
-    <p>Email: ralhanharminder@gmail.com | Phone: +1-647-784-8020</p>
-    <p>LinkedIn: Harminder</p>
-    <p>843 Frontenac Cres, Woodstock, Ontario, Canada</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Harminder Ralhan</h1>
+      <div class="contact">
+        <a href="mailto:ralhanharminder@gmail.com">📧 ralhanharminder@gmail.com</a> | 
+        <a href="tel:+16477848020">📞 +1-647-784-8020</a> | 
+        <a href="https://www.linkedin.com/in/harminder" target="_blank">🔗 LinkedIn</a> | 
+        Woodstock, Ontario, Canada
+      </div>
+      <!-- Print to PDF link -->
+      <a href="#" class="print-link" onclick="window.print()">🖨️ Print / Save as PDF</a>
+    </header>
 
-  <section>
-    <h2>Summary of Qualifications</h2>
-    <ul>
-      <li>Nearly 10 years of experience in database and application management in finance sector.</li>
-      <li>Knowledge of High Availability and Disaster Recovery planning for SQL and Oracle.</li>
-      <li>Strong interpersonal and communication skills.</li>
-      <li>Proven skills in managing IT applications in complex environments.</li>
-      <li>Strong analytical and problem-solving abilities.</li>
-      <li>Detail-oriented professional and strong team player.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Database Administrator with 10 years of experience in financial services and SaaS environments. 
+        Skilled in SQL Server, Oracle, and Azure cloud migrations with proven success in high‑availability 
+        and disaster recovery planning. Experienced in <strong>Azure DevOps automation, CI/CD pipelines, and infrastructure as code</strong>, 
+        enabling faster deployments and improved reliability. Adept at collaborating with cross‑functional teams, 
+        optimizing performance, and delivering secure, scalable solutions.
+      </p>
+    </section>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Languages: Python, Shell Scripting, PowerShell</li>
-      <li>Tools: ERWIN, SQL Developer, SQL Profiler, JIRA, Power BI, Eclipse, Commvault, Citrix Load Balancer, Apache Spark, IIS, IBM WAS, IBM MQ, dbatools, IderaSQL Safe, Rubrik</li>
-      <li>RDBMS: MS SQL Server, Oracle 12c, DB2</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Core Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <strong>Databases</strong><br>
+          SQL Server, Oracle 12c, DB2
+        </div>
+        <div>
+          <strong>Cloud & Tools</strong><br>
+          Azure, <strong>Azure DevOps</strong>, AWS, Power BI, JIRA
+        </div>
+        <div>
+          <strong>Languages</strong><br>
+          Python, Shell, PowerShell
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Experience</h2>
+    <section>
+      <h2>Experience</h2>
 
-    <h3>AXIS Capital Toronto – Database Administrator L3</h3>
-    <p><em>Jun 2021 – Current</em></p>
-    <ul>
-      <li>Managed 60 SQL server migrations to Azure IAAS VM’s using PowerShell scripts.</li>
-      <li>Designed and implemented Azure SQL databases and automated tasks with dbatools/Azure DevOps.</li>
-      <li>Migrated SQL server database to PostgreSQL.</li>
-      <li>Configured security including TDE with Azure Key Vault.</li>
-      <li>Troubleshot SSAS, SSIS, and query performance issues.</li>
-      <li>Defined backup and DR policies ensuring compliance with RTO/RPO.</li>
-    </ul>
+      <h3>AXIS Capital Toronto – Database Administrator L3</h3>
+      <p><em>Jun 2021 – Current</em></p>
+      <ul>
+        <li>Migrated 60+ SQL servers to Azure IAAS VMs using automated PowerShell scripts, reducing downtime by 30%.</li>
+        <li>Designed and implemented Azure SQL databases and automated tasks with dbatools and <strong>Azure DevOps pipelines</strong>.</li>
+        <li>Integrated CI/CD workflows for database deployments, reducing manual effort by 40%.</li>
+        <li>Configured security including TDE with Azure Key Vault.</li>
+        <li>Troubleshot SSAS, SSIS, and query performance issues.</li>
+        <li>Defined backup and DR policies ensuring compliance with RTO/RPO.</li>
+      </ul>
 
-    <h3>InvaFresh, Mississauga – Database Administrator/Developer</h3>
-    <p><em>Jun 2021 – Jul 2022</em></p>
-    <ul>
-      <li>Monitored and supported Azure databases for SaaS applications.</li>
-      <li>Implemented backup and disaster recovery policies in Azure.</li>
-      <li>Worked with developers on schema design and DB scripts for SQL, Oracle, MySQL, DB2.</li>
-      <li>Restored customer databases for analytics teams.</li>
-      <li>Updated data models using Erwin and SAS reports.</li>
-    </ul>
+      <h3>InvaFresh, Mississauga – Database Administrator/Developer</h3>
+      <p><em>Jun 2021 – Jul 2022</em></p>
+      <ul>
+        <li>Monitored and supported Azure databases for SaaS applications.</li>
+        <li>Implemented backup and disaster recovery policies in Azure.</li>
+        <li>Worked with developers on schema design and DB scripts across SQL, Oracle, MySQL, DB2.</li>
+        <li>Restored customer databases for analytics teams and updated data models using Erwin.</li>
+      </ul>
 
-    <h3>SOTI Inc, Mississauga – Sr. Technical Support Specialist L2</h3>
-    <p><em>Nov 2020 – May 2021</em></p>
-    <ul>
-      <li>Provided enterprise customer solutions within SLA.</li>
-      <li>Performed OS migrations and MobiControl upgrades on AWS.</li>
-      <li>Mentored L1 support technicians and created SOP documents.</li>
-    </ul>
+      <h3>SOTI Inc, Mississauga – Sr. Technical Support Specialist L2</h3>
+      <p><em>Nov 2020 – May 2021</em></p>
+      <ul>
+        <li>Provided enterprise customer solutions within SLA.</li>
+        <li>Performed OS migrations and MobiControl upgrades on AWS.</li>
+        <li>Mentored L1 support technicians and created SOP documents.</li>
+      </ul>
 
-    <h3>SOTI Inc, Mississauga – Technical Support Specialist L1</h3>
-    <p><em>Aug 2019 – Nov 2020</em></p>
-    <ul>
-      <li>Managed customer databases on Azure and AWS.</li>
-      <li>Supported SQL setups with HA and log replication.</li>
-      <li>Created SOPs and triaged Jira tickets for product bugs.</li>
-    </ul>
+      <h3>Union Bank of India, Mumbai – Manager IT</h3>
+      <p><em>Sep 2017 – Jun 2018</em></p>
+      <ul>
+        <li>Migrated internet banking DB from MS SQL to Oracle 12c.</li>
+        <li>Developed PL-SQL queries, procedures, and views.</li>
+        <li>Performed backups/restores with RMAN and Commvault.</li>
+      </ul>
+    </section>
 
-    <h3>Union Bank of India, Mumbai – Manager IT</h3>
-    <p><em>Sep 2017 – Jun 2018</em></p>
-    <ul>
-      <li>Migrated internet banking DB from MS SQL to Oracle 12c.</li>
-      <li>Developed PL-SQL queries, procedures, and views.</li>
-      <li>Performed backups/restores with RMAN and Commvault.</li>
-      <li>Configured UNIX OS installations and Cron jobs.</li>
-    </ul>
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Technology, ECE</strong> — National Institute of Technology, India (2012)</p>
+    </section>
 
-    <h3>Union Bank of India, Mumbai – Assistant Manager IT</h3>
-    <p><em>Sep 2013 – Aug 2017</em></p>
-    <ul>
-      <li>Administered SQL Server failover clusters (2008/2014).</li>
-      <li>Managed HA, Always On, mirroring, and log replication.</li>
-      <li>Performed DR drills and backups with Commvault.</li>
-      <li>Worked on performance tuning and application deployments in IBM WAS.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Azure Administrator Associate (AZ-104) – 2025</li>
+        <li>Azure Database Administrator Associate (DP-300) – 2022</li>
+        <li>MCSA SQL Database Infrastructure – 2020</li>
+        <li>Finacle E-Banking Application Management – 2016</li>
+        <li>Banking Technology Certification, IDRBT Hyderabad – 2014</li>
+      </ul>
+    </section>
+  </div>
 
-  <section>
-    <h2>Education</h2>
-    <p><strong>Bachelor of Technology, ECE</strong>, National Institute of Technology, India (Apr 2008 – Jul 2012)</p>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Azure Administrator Associate (AZ-104) – Oct 2025</li>
-      <li>Azure Database Administrator Associate (DP-300) – Mar 2022</li>
-      <li>MCSA – Administering MS-SQL Database Infrastructure (70-764) – Sep 2020</li>
-      <li>Finacle E-Banking Application Management – Jul 2016</li>
-      <li>Banking Technology Certification, IDRBT Hyderabad – Jul 2014</li>
-    </ul>
-  </section>
-
-  <footer style="text-align: center; margin-top: 40px; font-size: 0.9em; color: #555;">
-    <p>© 2025 Harminder Ralhan | Professional Resume</p>
+  <footer>
+    © 2025 Harminder Ralhan | Professional Resume
   </footer>
 
 </body>
