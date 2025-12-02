@@ -8,9 +8,9 @@
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      line-height: 1.6;
       background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
       text-align: center;
@@ -18,40 +18,145 @@
     }
     h1 {
       margin: 0;
-    }
-    section {
-      margin-bottom: 25px;
+      font-size: 2em;
     }
     h2 {
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
       color: #444;
     }
+    section {
+      margin-bottom: 25px;
+    }
     ul {
       list-style-type: square;
       padding-left: 20px;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #eee;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Harminder Singh</h1>
-    <p>Email: harminder@example.com | Phone: (123) 456-7890</p>
-    <p>Location: Woodstock, ON, Canada</p>
+    <div class="contact">
+      <p>Email: ralhanharminder@gmail.com | Phone: +1-647-784-8020</p>
+      <p>LinkedIn: Harminder</p>
+      <p>843 Frontenac Cres, Woodstock, Ontario, Canada</p>
+    </div>
   </header>
 
   <section>
-    <h2>Education</h2>
-    <p><strong>Bachelor of Computer Science</strong>, University of Toronto (2018 - 2022)</p>
-    <p>Relevant Courses: Data Structures, Web Development, Machine Learning</p>
+    <h2>Summary of Qualifications</h2>
+    <ul>
+      <li>Nearly 10 years of experience in database and application management in finance sector.</li>
+      <li>Knowledge of High Availability and Disaster Recovery planning for SQL and Oracle.</li>
+      <li>Strong interpersonal and communication skills.</li>
+      <li>Proven skills in managing IT applications in complex environments.</li>
+      <li>Strong analytical and problem-solving abilities.</li>
+      <li>Detail-oriented professional and strong team player.</li>
+    </ul>
   </section>
 
   <section>
-    <h2>Work Experience</h2>
-    <p><strong>Software Developer</strong> — Tech Solutions Inc. (2022 - Present)</p>
+    <h2>Technical Skills</h2>
     <ul>
-      <li>Developed and maintained web applications using HTML, CSS, JavaScript, and React.</li>
-      <li>Collaborated with cross-functional teams to deliver projects on time.</li>
-      <li>Optimized application performance and improved user experience.</li>
+      <li>Languages: Python, Shell Scripting, PowerShell</li>
+      <li>Tools: ERWIN, SQL Developer, JIRA, Power BI, Eclipse, Commvault, Citrix Load Balancer, Apache Spark, IIS, IBM WAS, IBM MQ, dbatools, IderaSQL Safe, Rubrik</li>
+      <li>RDBMS: MS SQL Server, Oracle 12c, DB2</li>
     </ul>
-    <p><strong>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <h3>AXIS Capital, Toronto — Database Administrator L3 (Jun 2021 – Current)</h3>
+    <ul>
+      <li>Managed SQL server migrations to Azure IAAS VM’s using PowerShell scripts.</li>
+      <li>Designed and implemented Azure SQL databases with automated management tasks.</li>
+      <li>Migrated SQL server database to PostgreSQL.</li>
+      <li>Configured security with TDE and Azure Key Vault.</li>
+      <li>Optimized performance issues related to SSAS, SSIS, and queries.</li>
+    </ul>
+
+    <h3>InvaFresh, Mississauga — Database Administrator/Developer (Jun 2021 – Jul 2022)</h3>
+    <ul>
+      <li>Monitored and supported Azure databases for SaaS applications.</li>
+      <li>Implemented backup and disaster recovery policies in Azure.</li>
+      <li>Worked with developers on database design and schema.</li>
+      <li>Maintained DB script release repository and performed syntax testing.</li>
+    </ul>
+
+    <h3>SOTI Inc, Mississauga — Sr. Technical Support Specialist L2 (Nov 2020 – May 2021)</h3>
+    <ul>
+      <li>Provided enterprise customer solutions within SLA.</li>
+      <li>Performed OS migrations and upgrades on AWS instances.</li>
+      <li>Mentored L1 support technicians and created SOP documents.</li>
+    </ul>
+
+    <h3>SOTI Inc, Mississauga — Technical Support Specialist L1 (Aug 2019 – Nov 2020)</h3>
+    <ul>
+      <li>Managed customer databases on Azure and AWS.</li>
+      <li>Supported complex SQL setups with High Availability and Log Replication.</li>
+      <li>Created SOPs and investigated product issues.</li>
+    </ul>
+
+    <h3>Union Bank of India, Mumbai — Manager IT (Sep 2017 – Jun 2018)</h3>
+    <ul>
+      <li>Migrated internet banking database from MS SQL to Oracle 12c.</li>
+      <li>Developed PL-SQL queries and managed Oracle High Availability services.</li>
+      <li>Performed backups and restores using RMAN integrated with Commvault.</li>
+    </ul>
+
+    <h3>Union Bank of India, Mumbai — Assistant Manager IT (Sep 2013 – Aug 2017)</h3>
+    <ul>
+      <li>Administered SQL server failover clusters.</li>
+      <li>Managed SQL Servers with High Availability and replication.</li>
+      <li>Performed backups, restores, and disaster recovery drills.</li>
+      <li>Resolved production issues and supported end users.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education & Certifications</h2>
+    <table>
+      <tr>
+        <th>Bachelor of Technology, ECE, National Institute of Technology, India</th>
+        <td>Apr 2008 – Jul 2012</td>
+      </tr>
+      <tr>
+        <td>Azure Administrator Associate (AZ-104)</td>
+        <td>Oct 2025</td>
+      </tr>
+      <tr>
+        <td>Azure Database Administrator Associate (DP-300)</td>
+        <td>Mar 2022</td>
+      </tr>
+      <tr>
+        <td>MCSA – Administering MS-SQL Database Infrastructure (70-764)</td>
+        <td>Sep 2020</td>
+      </tr>
+      <tr>
+        <td>Finacle E-Banking Application Management</td>
+        <td>Jul 2016</td>
+      </tr>
+      <tr>
+        <td>Banking Technology Certification, IDRBT Hyderabad</td>
+        <td>Jul 2014</td>
+      </tr>
+    </table>
+  </section>
+</body>
+</html>
