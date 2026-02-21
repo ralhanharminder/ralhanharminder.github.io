@@ -1,196 +1,195 @@
-/* General Styles */
+/* ===============================
+   GLOBAL STYLES
+================================= */
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background-color: #f0f0f0; /* Light grey background */
-  color: #333; /* Dark grey text */
+  color: #333;
   line-height: 1.6;
-  animation: fadeIn 1s ease-in-out; /* Fade in effect on page load */
+  background: linear-gradient(-45deg, #f0f0f0, #e6e6e6, #f5f5f5);
+  background-size: 400% 400%;
+  animation: gradientShift 18s ease infinite;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  opacity: 0;
-  animation: containerFadeIn 1s ease-in-out forwards; /* Fade in container */
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 }
+
+/* ===============================
+   HEADER
+================================= */
 
 header {
   text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 3px solid #4A4A4A; /* Luxury grey accent */
-  opacity: 0;
-  animation: fadeInHeader 1.5s ease-in-out forwards; /* Fade in header */
+  padding-bottom: 25px;
+  border-bottom: 3px solid #4A4A4A;
 }
 
 h1 {
   margin: 0;
-  font-size: 2.5em;
-  color: #4A4A4A; /* Luxury grey */
+  font-size: 2.6em;
+  color: #4A4A4A;
+  letter-spacing: 1px;
 }
 
 .contact {
-  margin-top: 10px;
-  font-size: 1em;
+  margin-top: 12px;
+  font-size: 0.95em;
   color: #555;
 }
 
 .contact a {
   color: #4A4A4A;
   text-decoration: none;
-  margin: 0 5px;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease;
 }
 
 .contact a:hover {
-  color: #333;
+  color: #000;
 }
 
-.print-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 12px;
-  background-color: #4A4A4A; /* Luxury grey */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
+/* ===============================
+   SECTIONS
+================================= */
 
-.print-link:hover {
-  background-color: #333;
-}
-
-/* Section Styling */
 section {
-  margin-bottom: 30px;
+  margin: 50px 0;
   opacity: 0;
-  animation: fadeInSection 1s ease-in-out forwards;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h2 {
-  margin-top: 0;
+  position: relative;
   color: #4A4A4A;
-  border-left: 5px solid #4A4A4A;
-  padding-left: 10px;
-  background-color: #f5f5f5;
-  padding: 10px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #4A4A4A;
+  margin-top: 6px;
+  transition: width 0.8s ease;
+}
+
+section.active h2::after {
+  width: 60px;
 }
 
 h3 {
   margin-bottom: 5px;
-  color: #333;
+  color: #222;
 }
 
 ul {
-  margin: 0;
   padding-left: 20px;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   SKILLS GRID
+================================= */
+
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
-  opacity: 0;
-  animation: fadeInSkills 1.5s ease-in-out forwards;
 }
 
 .skills-grid div {
   background: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #dfe6e9;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-grid div:hover {
-  transform: scale(1.05); /* Slight hover zoom effect */
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-.skills-grid div strong {
-  font-weight: bold;
-}
+/* ===============================
+   FOOTER
+================================= */
 
-/* Footer */
 footer {
   text-align: center;
-  margin-top: 40px;
-  font-size: 1em;
-  color: #555;
-  background-color: #e9e9e9;
-  padding: 15px 0;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #777;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+/* ===============================
+   ANIMATIONS
+================================= */
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-@keyframes containerFadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* ===============================
+   RESPONSIVE
+================================= */
 
-@keyframes fadeInHeader {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+    margin: 20px;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  h1 {
+    font-size: 2em;
   }
 }
 
-@keyframes fadeInSection {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* ===============================
+   PRINT FRIENDLY
+================================= */
 
-@keyframes fadeInSkills {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Print-friendly adjustments */
 @media print {
   body {
-    background: #fff;
+    background: #ffffff;
+    animation: none;
   }
 
   .container {
     box-shadow: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .print-link {
-    display: none;
+  section {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
